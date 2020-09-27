@@ -1,0 +1,27 @@
+#cookies-page {
+	.header {
+		margin-bottom: 46px;
+	}
+	.policy_body {
+		@extend .container;
+		background-color: $white;
+		box-shadow: $shadow-1;
+		padding: 70px 111px;
+
+		h5,
+		p {
+			color: $green-6;
+			@extend .animate__animated, .animate__fadeIn;
+		}
+		h5 {
+			margin-top: 60px;
+			margin-bottom: 20px;
+		}
+		@include for-size(tablet-portrait-down) {
+			padding: 50px;
+		}
+		@include for-size(phone-only) {
+			padding: 30px 15px;
+		}
+	}
+}

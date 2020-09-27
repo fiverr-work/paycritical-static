@@ -1,0 +1,46 @@
+#contact-page {
+	.info {
+		@extend .container;
+		@include flex(space-between, flex-start);
+		@extend .animate__animated, .animate__fadeIn;
+		flex-wrap: wrap;
+
+		&__card {
+			background-color: $white;
+			margin-bottom: 30px;
+			padding: 30px 40px;
+			flex: 1;
+			min-width: 300px;
+			max-width: 500px;
+			min-height: 220px;
+			max-height: 220px;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+			@include for-size(tablet-landscape-down) {
+				&:last-child {
+					max-width: 100%;
+				}
+				&:nth-child(2) {
+					margin-right: 0;
+				}
+			}
+			@include for-size(tablet-portrait-down) {
+				margin-left: auto;
+				margin-right: auto !important;
+				max-width: 100%;
+			}
+		}
+		@include for-size(desktop-down) {
+			justify-content: center;
+		}
+	}
+	.contact {
+		background-color: $white;
+		padding: 35px 62px 48px;
+		input,
+		textarea {
+			width: 100%;
+		}
+	}
+}

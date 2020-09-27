@@ -1,0 +1,148 @@
+/*=== Import Fonts ===*/
+@include font-face("Montserrat Light", "../fonts/Montserrat/Montserrat-Light.ttf");
+@include font-face("Montserrat Regular", "../fonts/Montserrat/Montserrat-Regular.ttf");
+@include font-face("Montserrat Medium", "../fonts/Montserrat/Montserrat-Medium.ttf");
+@include font-face("Montserrat Semibold", "../fonts/Montserrat/Montserrat-Semibold.ttf");
+@include font-face("Montserrat Bold", "../fonts/Montserrat/Montserrat-Bold.ttf");
+
+@include font-face("Raleway Light", "../fonts/Raleway/Raleway-Light.ttf");
+@include font-face("Raleway Regular", "../fonts/Raleway/Raleway-Regular.ttf");
+@include font-face("Raleway Medium", "../fonts/Raleway/Raleway-Medium.ttf");
+@include font-face("Raleway Semibold", "../fonts/Raleway/Raleway-Semibold.ttf");
+@include font-face("Raleway Bold", "../fonts/Raleway/Raleway-Bold.ttf");
+
+/*=== Typography Styling ===*/
+* {
+	font-family: $primary-regular, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: $size-3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $grey-4;
+	font-stretch: normal;
+	letter-spacing: normal;
+}
+
+h1 {
+	font-family: $secondary-bold;
+	font-size: $size-8;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: $secondary-SemiBold;
+	font-size: $size-7;
+	font-weight: 600;
+}
+
+h3 {
+	font-family: $secondary-bold;
+	font-size: $size-6;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: $secondary-bold;
+	font-size: $size-5;
+	font-weight: bold;
+}
+
+h5 {
+	font-family: $secondary-SemiBold;
+	font-size: $size-5;
+	font-weight: 600;
+}
+
+h6 {
+	font-family: $primary-SemiBold;
+	font-size: $size-4;
+	font-weight: 600;
+	line-height: 1.5;
+
+	&.small {
+		font-size: $size-3;
+		line-height: 1.7;
+	}
+
+	&.tiny {
+		font-family: $primary-bold;
+		font-size: $size-2;
+		font-weight: bold;
+		line-height: 1.51;
+	}
+}
+
+p {
+	color: $grey-3;
+	font-family: $primary-regular;
+	line-height: 1.7;
+	letter-spacing: normal;
+
+	&.p-small {
+		font-size: $size-2;
+	}
+	&.p-medium {
+		font-size: $size-3;
+	}
+	&.p-large {
+		font-size: $size-4;
+	}
+	b {
+		font-family: $primary-bold;
+	}
+}
+li {
+	color: $grey-3;
+	font-family: $primary-regular;
+	line-height: 1.7;
+	letter-spacing: normal;
+	list-style: inside;
+}
+label {
+	font-family: $primary-SemiBold;
+	color: $grey-4;
+	font-size: $size-3;
+	line-height: 24.1px;
+	display: block;
+}
+
+a {
+	font-size: $size-1;
+}
+
+.caption {
+	font-size: $size-1;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.load-more {
+	font-size: $size-3;
+	font-family: $primary-SemiBold;
+	color: $green-4;
+}
+
+@include for-size(phone-only) {
+	h1 {
+		font-size: $size-7;
+	}
+	h2 {
+		font-size: $size-6;
+	}
+	h3 {
+		font-size: $size-5;
+	}
+	p {
+		&.p-large {
+			font-size: $size-3;
+		}
+	}
+}

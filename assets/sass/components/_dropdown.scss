@@ -1,0 +1,17 @@
+.dropdown {
+	.dropdown-toggle {
+		padding: 16px;
+		font-size: $size-2;
+		color: $grey-4;
+		&:hover {
+			color: $green-2;
+		}
+	}
+	.dropdown-item {
+		padding: 15px 20px;
+		color: $grey-4;
+		&:hover {
+			color: $green-2;
+		}
+	}
+}

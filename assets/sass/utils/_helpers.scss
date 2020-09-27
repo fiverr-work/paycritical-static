@@ -1,0 +1,47 @@
+.bg-grey {
+	background-color: $grey-1;
+}
+
+.shadow-sm {
+	box-shadow: $shadow-1 !important;
+}
+
+.shadow-md {
+	box-shadow: $shadow-2 !important;
+}
+
+.text-dark-green {
+	color: $green-6;
+}
+
+.text-green {
+	color: $green-4;
+}
+
+.underline {
+	position: relative;
+	&::before {
+		content: "";
+		background-color: #02d871;
+		height: 4px;
+		width: 111px;
+		position: absolute;
+		bottom: -11px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.left-line {
+	position: relative;
+	&::before {
+		content: "";
+		background-color: #02d871;
+		height: 4px;
+		width: 34px;
+		position: absolute;
+		left: -50px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

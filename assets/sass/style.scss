@@ -1,0 +1,32 @@
+// 1 - Vendors;
+@import "vendors/bootstrap";
+@import "vendors/animate";
+
+// 2 - Utils
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+// 3 - Base;
+@import "base/reset";
+@import "base/typography";
+
+// 4 - Layout;
+@import "layout/navbar";
+@import "layout/blog-section";
+@import "layout/header-page";
+@import "layout/footer";
+
+// 5 - Components;
+@import "components/preloader";
+@import "components/button";
+@import "components/input";
+@import "components/dropdown";
+@import "components/post";
+
+// 5 - Pages;
+@import "pages/landing";
+@import "pages/cookies";
+@import "pages/blog";
+@import "pages/contact";
+@import "pages/post";

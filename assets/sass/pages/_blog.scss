@@ -1,0 +1,17 @@
+#blog-page {
+	.posts {
+		@extend .container;
+		@include flex(space-between, flex-start);
+		flex-wrap: wrap;
+		.load-more {
+			display: inline-block;
+			margin: 30px auto 0;
+			&:hover {
+				color: $grey-4;
+			}
+		}
+		@include for-size(tablet-landscape-down) {
+			justify-content: center;
+		}
+	}
+}

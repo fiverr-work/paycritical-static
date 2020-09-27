@@ -1,0 +1,88 @@
+.preloader {
+	height: 5px;
+	position: fixed;
+	top: 0;
+	z-index: 999999;
+	-webkit-animation-name: slid;
+	animation-name: slid;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	background: rgb(255, 0, 0);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(rgba(255, 0, 0, 0.8)),
+		color-stop(16%, rgba(10, 255, 0, 0.8)),
+		color-stop(32%, rgba(0, 255, 254, 0.8)),
+		color-stop(50%, rgba(10, 0, 255, 0.8)),
+		color-stop(68%, rgba(254, 0, 255, 0.8)),
+		color-stop(85%, rgba(255, 0, 0, 0.8)),
+		to(rgba(255, 246, 0, 0.8))
+	);
+	background: -o-linear-gradient(
+		left,
+		rgba(255, 0, 0, 0.8) 0%,
+		rgba(10, 255, 0, 0.8) 16%,
+		rgba(0, 255, 254, 0.8) 32%,
+		rgba(10, 0, 255, 0.8) 50%,
+		rgba(254, 0, 255, 0.8) 68%,
+		rgba(255, 0, 0, 0.8) 85%,
+		rgba(255, 246, 0, 0.8) 100%
+	);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 0.8) 0%,
+		rgba(10, 255, 0, 0.8) 16%,
+		rgba(0, 255, 254, 0.8) 32%,
+		rgba(10, 0, 255, 0.8) 50%,
+		rgba(254, 0, 255, 0.8) 68%,
+		rgba(255, 0, 0, 0.8) 85%,
+		rgba(255, 246, 0, 0.8) 100%
+	);
+	&::after {
+		content: "";
+		position: fixed;
+		top: 5px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $grey-1;
+	}
+}
+
+@-webkit-keyframes slid {
+	0% {
+		left: 0%;
+		right: 100%;
+	}
+	50% {
+		right: 0%;
+		left: 0%;
+	}
+	100% {
+		left: 100%;
+		right: 0%;
+	}
+}
+
+@keyframes slid {
+	0% {
+		left: 0%;
+		right: 100%;
+	}
+	50% {
+		right: 0%;
+		left: 0%;
+	}
+	100% {
+		left: 100%;
+		right: 0%;
+	}
+}

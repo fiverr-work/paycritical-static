@@ -1,0 +1,130 @@
+#landing-page {
+	padding-bottom: 0;
+	& > section {
+		padding: 100px 0;
+
+		& > header {
+			margin-bottom: 50px;
+			text-align: center;
+			p {
+				max-width: 430px;
+				margin: 0 auto;
+			}
+		}
+		&:not(#blog) {
+			@extend .container;
+		}
+		&#hero {
+			padding-top: 0;
+			.button {
+				width: 290px;
+				margin-top: 45px;
+			}
+
+			@include for-size(phone-only) {
+				.button {
+					width: 100%;
+					margin-top: 30px;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+			}
+		}
+		&#features {
+			& > .row {
+				padding: 60px 0 80px;
+				@include flex(space-between, center);
+				@include for-size(tablet-portrait-down) {
+					padding-top: 40px;
+					padding-bottom: 40px;
+					&:nth-child(3) {
+						& > div:first-child {
+							order: 2;
+						}
+						& > div:last-child {
+							order: 1;
+						}
+					}
+					h4 {
+						display: inline-block;
+						max-width: 300px;
+					}
+					img {
+						margin-top: 20px;
+					}
+				}
+				@include for-size(phone-only) {
+					text-align: center;
+				}
+			}
+		}
+		&#why-paycritical {
+			background-color: $green-3;
+			padding-top: 61px;
+			padding-bottom: 82px;
+
+			h3 {
+				color: $white;
+				text-align: center;
+				margin-bottom: 50px;
+			}
+			.row:first-child {
+				margin-bottom: 30px;
+			}
+			.reason {
+				background-color: rgba($white, 0.3);
+				width: 313px;
+				height: 110px;
+				padding: 35px 40px;
+				@include flex(center, center);
+				p {
+					font-weight: 600;
+					color: $white;
+					line-height: normal;
+					margin-bottom: 0;
+					margin-left: 10px;
+				}
+			}
+			@include for-size(tablet-portrait-down) {
+				.row:first-child {
+					margin-bottom: 0;
+				}
+				.reason {
+					width: auto;
+					height: auto;
+					margin: 0 auto 30px;
+					justify-content: flex-start;
+				}
+				padding-bottom: 52px;
+			}
+		}
+		&#use-cases {
+			padding-bottom: 0;
+			.case {
+				@include flex(center, center);
+				flex-direction: column;
+				background-color: $grey-1;
+				padding: 60px 40px 46px;
+				height: 237px;
+				margin-bottom: 30px;
+
+				h4 {
+					font-size: $size-4;
+					margin-top: 26px;
+				}
+			}
+		}
+		&#our-partners {
+			.partners {
+				@include flex(center, center);
+				flex-wrap: wrap;
+				img:not(:last-child) {
+					margin-right: 32px;
+				}
+				img {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+}

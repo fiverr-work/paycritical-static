@@ -1,0 +1,130 @@
+#post-page {
+	padding-bottom: 0;
+	.post__content {
+		@extend .container;
+		&__header {
+			margin-bottom: 46px;
+			h2 {
+				max-width: 700px;
+				margin: 0 auto;
+				text-align: center;
+				@extend .animate__animated, .animate__zoomIn;
+
+				&::after {
+					content: "";
+					display: block;
+					background-color: $grey-2;
+					margin: 22px auto;
+					width: 60px;
+					height: 1px;
+				}
+			}
+		}
+		&__img {
+			margin-bottom: 50px;
+			img {
+				width: 100%;
+			}
+			@include for-size(phone-only) {
+				margin-bottom: 30px;
+				img {
+					height: 200px;
+					object-fit: cover;
+				}
+			}
+		}
+		&__body {
+			&__aside {
+				width: 42px;
+				position: sticky;
+				top: 90px;
+				@extend .animate__animated, .animate__bounceInLeft;
+
+				.caption {
+					margin-bottom: 22px;
+					&:hover {
+						color: $green-2;
+					}
+				}
+				.share-by {
+					@include flex(center, center);
+					flex-direction: column;
+					a {
+						margin-bottom: 22px;
+						svg {
+							path {
+								stroke: $grey-4;
+							}
+							&:hover {
+								path {
+									stroke: $green-2;
+								}
+							}
+						}
+					}
+				}
+			}
+			p {
+				position: relative;
+				bottom: 165px;
+				color: $green-6;
+				display: block;
+				max-width: 700px;
+				margin: 0 auto 60px;
+			}
+			@include for-size(tablet-landscape-down) {
+				p {
+					margin-left: 50px;
+				}
+			}
+			@include for-size(phone-only) {
+				&__aside {
+					@include flex(center, center);
+					position: static;
+					width: 100%;
+					.caption {
+						margin-right: 22px;
+						margin-bottom: 0;
+					}
+					.share-by {
+						flex-direction: row;
+						a {
+							margin-bottom: 0;
+							margin-right: 22px;
+						}
+					}
+				}
+				p {
+					margin-left: auto;
+					bottom: -20px;
+				}
+			}
+		}
+		&__auth {
+			text-align: center;
+			bottom: 100px;
+			position: relative;
+
+			@include for-size(phone-only) {
+				position: static;
+				margin-bottom: 78px;
+				margin-top: 100px;
+			}
+			&__img {
+				width: 56px;
+				height: 56px;
+				border-radius: 50px;
+				margin-bottom: 16px;
+			}
+			&__name {
+				margin-bottom: 0;
+			}
+			&__about {
+				color: $grey-3;
+				font-size: $size-3;
+				max-width: 288px;
+				margin: 0 auto;
+			}
+		}
+	}
+}

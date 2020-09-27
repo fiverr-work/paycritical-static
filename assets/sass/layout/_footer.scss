@@ -1,0 +1,92 @@
+.footer {
+	background-color: $green-5;
+
+	.row {
+		padding: 60px 0 30px;
+		& > div {
+			margin-bottom: 40px;
+		}
+	}
+	h6 {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		color: $white;
+	}
+	p,
+	a,
+	.dropdown .dropdown-toggle {
+		color: $white;
+		font-size: $size-1;
+		opacity: 0.8;
+		padding-left: 0;
+	}
+	a {
+		padding-bottom: 5px;
+		padding-top: 5px;
+		outline-color: $grey-1 !important;
+		&:hover {
+			color: $green-2;
+			path {
+				stroke: $green-2;
+			}
+		}
+	}
+	.logo {
+		width: 100%;
+		max-width: 146px;
+	}
+	.divider {
+		width: 83px;
+		height: 1px;
+		background-color: $white;
+		opacity: 0.3;
+		margin: 9px 0 16px;
+	}
+	.discription {
+		max-width: 190px;
+	}
+	.email {
+		word-break: break-word;
+		margin-bottom: 18px;
+	}
+	.social-media {
+		margin-top: 27px;
+		a {
+			padding: 4px;
+			display: inline-block;
+		}
+	}
+	.copy-rights {
+		text-align: center;
+		padding-bottom: 30px;
+		margin: 0;
+		opacity: 0.8;
+		span {
+			font-size: inherit;
+		}
+	}
+
+	@include for-size(phone-only) {
+		text-align: center;
+		.row {
+			padding-bottom: 0;
+		}
+		h6 {
+			margin-bottom: 10px;
+		}
+		a {
+			padding: 10px;
+			display: inline-block;
+		}
+		.divider {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.discription {
+			max-width: 100%;
+		}
+		.dropdown .dropdown-toggle{
+			padding-left: 16px;
+		}
+	}
+}

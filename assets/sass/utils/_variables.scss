@@ -1,0 +1,54 @@
+// Grey
+$grey-1: #f7f8f7;
+$grey-2: #dce0de;
+$grey-3: #666666;
+$grey-4: #222222;
+
+// Green
+$green-1: #02d871;
+$green-2: #03d36f;
+$green-3: #04b560;
+$green-4: #02a556;
+$green-5: #32483e;
+$green-6: #02170d;
+
+// Black & White
+$black: #000000;
+$white: #ffffff;
+
+//Shadows
+$shadow-1: 0 2px 3px 0 rgba(0, 0, 0, 0.02);
+$shadow-2: 0 2px 3px 0 rgba(0, 0, 0, 0.06);
+
+//Shadows Hover
+$shadow-hover-1: 0 2px 3px 0 rgba(0, 0, 0, 0.04);
+$shadow-hover-2: 0 2px 3px 0 rgba(0, 0, 0, 0.08);
+
+//Font-Sizes
+$size-1: 12px;
+$size-2: 14px;
+$size-3: 16px;
+$size-4: 18px;
+$size-5: 24px;
+$size-6: 30px;
+$size-7: 36px;
+$size-8: 48px;
+
+//Font-Family
+$primary-light: "Montserrat Light";
+$primary-regular: "Montserrat Regular";
+$primary-medium: "Montserrat Medium";
+$primary-SemiBold: "Montserrat Semibold";
+$primary-bold: "Montserrat Bold";
+
+$secondary-light: "Raleway Light";
+$secondary-regular: "Raleway Regular";
+$secondary-medium: "Raleway Medium";
+$secondary-SemiBold: "Raleway SemiBold";
+$secondary-bold: "Raleway Bold";
+
+// Breakpoint
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

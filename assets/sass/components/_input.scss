@@ -1,0 +1,23 @@
+// Inputs & Placeholders Style
+input,
+textarea {
+	border-radius: 5px;
+	border: solid 1px $grey-2;
+	background-color: $white;
+	padding: 9px 20px;
+	font-size: $size-3;
+	line-height: 27.2px;
+	font-family: $primary-regular;
+	color: $grey-4;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	display: block;
+
+	&:focus {
+		outline-color: $green-2;
+	}
+}
+
+@include input-placeholder {
+	color: $grey-3;
+}

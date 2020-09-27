@@ -1,0 +1,13 @@
+.header {
+	display: flex;
+	margin-bottom: 50px;
+	@extend .container;
+	&__icon {
+		position: relative;
+		right: 14px;
+		top: 8px;
+	}
+	&__body {
+		max-width: 600px;
+	}
+}

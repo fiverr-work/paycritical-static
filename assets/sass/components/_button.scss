@@ -1,0 +1,32 @@
+.button {
+	display: inline-block;
+	font-family: $primary-medium;
+	font-size: $size-3;
+	color: $grey-4;
+	text-align: center;
+	background: none;
+	border: solid 1px $grey-4;
+	border-radius: 5px;
+	padding: 12px 31px;
+	cursor: pointer;
+	transition: background 500ms ease-in-out, color 500ms ease-in-out, border 500ms ease-in-out;
+
+	&.primary {
+		font-family: $primary-bold;
+		background-color: $green-2;
+		border-color: $green-2;
+		color: $white;
+	}
+
+	&:hover {
+		transition: background 500ms ease-in-out, color 500ms ease-in-out, border 500ms ease-in-out;
+		background-color: $grey-4;
+		color: $white;
+		border-color: $grey-4;
+	}
+}
+
+a,
+.button {
+	@include ripple-effect;
+}

@@ -1,0 +1,120 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	border: 0;
+	vertical-align: baseline;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+	font-size: 100%; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	scroll-behavior: smooth;
+}
+
+main {
+	padding-top: 150px;
+	padding-bottom: 80px;
+
+	@include for-size(phone-only) {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	display: block;
+}
+
+i {
+	vertical-align: middle;
+}
+
+a,
+a:visited {
+	cursor: pointer;
+	transition: color 400ms ease-in-out;
+
+	&:focus {
+		outline: thin dotted;
+		outline-color: $green-6;
+	}
+	&:active,
+	&:hover {
+		outline: 0;
+		text-decoration: none;
+		transition: color 400ms ease-in-out;
+	}
+}
+
+svg {
+	path {
+		transition: stroke 400ms ease-in-out, fill 400ms ease-in-out;
+	}
+	&:hover {
+		path {
+			transition: stroke 400ms ease-in-out, fill 400ms ease-in-out;
+		}
+	}
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+	border: 0; /* 1 */
+	-ms-interpolation-mode: bicubic; /* 2 */
+}
+
+// Scrollbar customization
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: $grey-1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: $green-1;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: $green-2;
+}
